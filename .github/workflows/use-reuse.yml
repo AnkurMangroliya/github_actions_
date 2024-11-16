@@ -60,6 +60,8 @@ jobs:
   deploy:
     needs: build
     uses: ./.github/workflows/reuseable.yml
+    with:
+      artifact-name: dist-files
 
       # - name: Output event data
       #   run: echo "${{ toJSON(github.event) }}"
